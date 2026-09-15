@@ -1,1 +1,12 @@
+Routage statique et dynamique (RIP) – Simulation Cisco
 
+## 1. Contexte
+Deux routeurs interconnectent deux réseaux locaux :
+- Site A : 192.168.10.0/24 (Router1)
+- Site B : 192.168.20.0/24 (Router2)
+- Liaison WAN : 10.0.0.0/24
+
+Objectif :
+1/ Configurer le routage statique
+2/Migrer vers RIP
+3/ Vérifier la connectivité
