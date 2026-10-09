@@ -93,3 +93,13 @@ ou
 #glpivdb
 #glpiuser 
 
+#Bilan :
+#Ce projet de déploiement m'a permis de valider les compétences clés suivantes :
+#Maîtrise de l'environnement Linux (Debian) en ligne de commande (headless), sans interface graphique.
+
+#Mise en œuvre d'une architecture web complète via l'installation d'une pile LAMP et le paramétrage d'un serveur web Apache (VirtualHost, modules de réécriture).
+
+#Application des bonnes pratiques de sécurité (durcissement des accès MariaDB, dissociation des dossiers sensibles hors de la racine web).
+
+#Compréhension d'un outil ITSM/Helpdesk (GLPI), de son installation par assistant Web jusqu'à la connexion à sa base de données dédiée.
+
