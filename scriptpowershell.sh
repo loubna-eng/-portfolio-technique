@@ -1,7 +1,11 @@
 
+#Script d'automatisation pour la création en masse d'utilisateurs dans l'Active Directory.
+#Ce script importe un fichier CSV contenant des données utilisateurs, 
+#crée chaque compte dans l'unité d'organisation (OU) spécifiée et définit un mot de passe temporaire
 Import-Module ActiveDirectory
-
+# Chemin vers le fichier CSV contenant la liste des utilisateurs
 $CsvPath = "C:\Scripts\utilisateurs.csv"
+# Unité d'organisation (OU) cible où les comptes seront créés
 $TargetOU = "OU=Collaborateurs,DC=GreenTechSprint,DC=fr"
 $DefaultPassword = ConvertTo-SecureString "P@ssword2026!" -AsPlainText -Force
 
@@ -9,6 +13,7 @@ $DefaultPassword = ConvertTo-SecureString "P@ssword2026!" -AsPlainText -Force
 $Header = Get-Content -Path$CsvPath -First 1
 $Delimiter = if ($Header -like "*;*") { ";" } else { "," }
 
+# Importer le fichier CSV
 Import-Csv -Path $CsvPath -Delimiter$Delimiter | ForEach-Object {
     $Firstname =$_.Firstname
     $Lastname  =$_.Lastname
