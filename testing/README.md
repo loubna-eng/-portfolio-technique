@@ -12,7 +12,7 @@ Ce dossier regroupe mes exercices pratiques et cas d'étude réalisés dans le c
 
 ---
 
-## 2. Conception des Cas de Test
+## 2. 📋Conception des Cas de Test
 
 * **Concept :** Analyser les exigences fonctionnelles pour concevoir des cas de test détaillés (préconditions, jeux de données, étapes, résultats attendus).
 * **Exercice correspondant :** [`/cahiers-de-test/test logiciel -Conception des tests.pdf`](./cahiers-de-test/test%20logiciel%20-Conception%20des%20tests.pdf)
@@ -20,7 +20,7 @@ Ce dossier regroupe mes exercices pratiques et cas d'étude réalisés dans le c
 
 ---
 
-## 3.  Exécution des Tests & Bilan de Campagne
+## 3. 📋 Exécution des Tests & Bilan de Campagne
 
 * **Concept :** Exécuter les cas de test, consigner les résultats (Pass / Fail / Non Testé) et calculer les indicateurs de couverture et de complétude.
 * **Exercice correspondant :** [`/cahiers-de-test/exemple_de_bilan_de_test.xlsx`](./cahiers-de-test/exemple_de_bilan_de_test.xlsx)
@@ -37,7 +37,7 @@ Ce dossier regroupe mes exercices pratiques et cas d'étude réalisés dans le c
 
 ---
 
-## 5. Test d'APIs REST
+## 5.🌐 Test d'APIs REST
 
 * **Concept :** Valider les endpoints d'une API web (méthodes HTTP, paramètres de requête, corps JSON et codes de statut HTTP).
 * **Exercices correspondants :**
