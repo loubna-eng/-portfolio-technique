@@ -1,4 +1,4 @@
-# 🧪 Portfolio Technique : Assurance Qualité (QA) & Infrastructure IT
+# Portfolio Technique : Assurance Qualité (QA) & Infrastructure IT
 
 Bienvenue sur la documentation de mes projets réalisés dans le cadre de ma reconversion professionnelle vers le **Testing Logiciel** et l'**Automatisation**.
 
@@ -6,9 +6,9 @@ Tout au long de mon parcours d'apprentissage, j'ai combiné théorie et pratique
 
 ---
 
-## 🎯 Démarche & Parcours d'Apprentissage
+##  Démarche & Parcours d'Apprentissage
 
-### 1. 🧪 Test & Validation Logicielle (QA)
+### 1.  Test & Validation Logicielle (QA)
 J'ai suivi une formation spécialisée sur Udemy pour acquérir le socle théorique du métier de testeur logiciel et comprendre la logique de l'Assurance Qualité. Au fil de mon apprentissage, j'ai constaté une forte synergie entre la **démarche QA** et mon expérience passée en **chimie analytique** (rigueur des protocoles, traçabilité des données, gestion des non-conformités/OOS). 
 
 Pour concrétiser ces notions, j'ai réalisé plusieurs cas pratiques documentés dans ce dépôt :
@@ -17,7 +17,7 @@ Pour concrétiser ces notions, j'ai réalisé plusieurs cas pratiques documenté
 * Qualification et documentation d'anomalies (*Bug Reports*)
 * Tests et validation d'APIs REST (*Postman*)
 
-### 2. 🛠️ Fondamentaux Systèmes, Réseaux & Automatisation
+### 2.  Fondamentaux Systèmes, Réseaux & Automatisation
 Afin de renforcer ma compréhension globale des architectures et portée par une vraie curiosité pour l'automatisation, j'ai investi dans une formation à distance en autonomie sur les fondamentaux IT. 
 
 Cette formation m'a permis d'acquérir des compétences pratiques en :
