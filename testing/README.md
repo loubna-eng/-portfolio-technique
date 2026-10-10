@@ -4,7 +4,7 @@ Ce dossier regroupe mes exercices pratiques et cas d'étude réalisés dans le c
 
 ---
 
-## 1. Stratégie & Planification de Test
+## 1. 📝Stratégie & Planification de Test
 
 * **Concept :** Définir le cadre d'une campagne de test, la stratégie globale, la couverture des exigences, les critères d'entrée/sortie et la gestion des risques.
 * **Exercice correspondant :** [`/plans-de-test/Live-Project_Test-Plan_SoftwareTestingHelp.pdf`](./plans-de-test/Live-Project_Test-Plan_SoftwareTestingHelp.pdf)
@@ -28,7 +28,7 @@ Ce dossier regroupe mes exercices pratiques et cas d'étude réalisés dans le c
 
 ---
 
-## 4. Gestion & Documentation des Anomalies
+## 4.🐛 Gestion & Documentation des Anomalies
 
 * **Concept :** Identifier un écart entre le résultat attendu et le résultat obtenu, puis documenter l'anomalie de façon claire pour l'équipe de développement.
 * **Exercices correspondants :**
