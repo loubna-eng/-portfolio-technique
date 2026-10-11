@@ -7,7 +7,7 @@ Ce dossier regroupe mes exercices pratiques et cas d'étude réalisés dans le c
 ## 1. 📝Stratégie & Planification de Test
 
 * **Concept :** Définir le cadre d'une campagne de test, la stratégie globale, la couverture des exigences, les critères d'entrée/sortie et la gestion des risques.
-* **Exercice correspondant :** [`/plans-de-test/Live-Project_Test-Plan_SoftwareTestingHelp.pdf`](https://github.com/loubna-eng/-portfolio-technique/blob/master/testing/api-testing/EXERCICE%2Bapi%2B-%2Banalyser%2B.pdf)
+* **Exercice correspondant :** [`/plans-de-test/Live-Project_Test-Plan_SoftwareTestingHelp.pdf`](https://github.com/loubna-eng/-portfolio-technique/blob/master/testing/plans-de-test/Live-Project_Test-Plan_SoftwareTestingHelp.pdf)
   * *Description :* Étude d'un plan de test réel pour le module RH (OrangeHRM)[cite: 13, 17]. Ce document détaille les niveaux de test (Exploratoire, Fonctionnel, UAT), les stratégies d'exécution et les critères d'acceptation[cite: 15, 19, 21].
 
 ---
