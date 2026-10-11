@@ -20,15 +20,8 @@ Ce dossier regroupe mes exercices pratiques et cas d'étude réalisés dans le c
 
 ---
 
-## 3. 📋 Exécution des Tests & Bilan de Campagne
 
-* **Concept :** Exécuter les cas de test, consigner les résultats (Pass / Fail / Non Testé) et calculer les indicateurs de couverture et de complétude.
-* **Exercice correspondant :** [`/cahiers-de-test/exemple_de_bilan_de_test.xlsx`](./cahiers-de-test/exemple_de_bilan_de_test.xlsx)
-  * *Description :* Cahier d'exécution et tableau de synthèse mesurant la couverture des tests (Authentification, Pages Web, CSS) avec calcul automatique du taux d'avancement[cite: 3].
-
----
-
-## 4.🐛 Gestion & Documentation des Anomalies
+## 3.🐛 Gestion & Documentation des Anomalies
 
 * **Concept :** Identifier un écart entre le résultat attendu et le résultat obtenu, puis documenter l'anomalie de façon claire pour l'équipe de développement.
 * **Exercices correspondants :**
@@ -37,7 +30,7 @@ Ce dossier regroupe mes exercices pratiques et cas d'étude réalisés dans le c
 
 ---
 
-## 5.🌐 Test d'APIs REST
+## 4.🌐 Test d'APIs REST
 
 * **Concept :** Valider les endpoints d'une API web (méthodes HTTP, paramètres de requête, corps JSON et codes de statut HTTP).
 * **Exercices correspondants :**
