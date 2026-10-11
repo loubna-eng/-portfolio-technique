@@ -15,10 +15,10 @@ Ce dossier regroupe mes exercices pratiques et cas d'étude réalisés dans le c
 ## 2. 📋 Conception des Cas de Test
 
 * **Concept :** Analyser les exigences fonctionnelles pour concevoir des cas de test détaillés (préconditions, jeux de données, étapes, résultats attendus).
-* **Exercice correspondant :** [Consulter le cahier de test (PDF)](https://github.com/loubna-eng/-portfolio-technique/blob/main/testing/cahiers-de-test/test%20logiciel%20-Conception%20des%20tests.pdf)
+* **Exercice correspondant :** [Consulter le cahier de test (PDF)](https://github.com/loubna-eng/-portfolio-technique/blob/master/testing/conception-cas-de-test/test%2Blogiciel%2B-Conception%2Bdes%2Btests.pdf))
   * *Description :* Exercice pratique de conception de cas de test pour l'accès aux interfaces et marketplaces (ex: Marketplaces membres et privées).
  
-  * 3. Conception des 
+ 
 
 ---
 
