@@ -28,7 +28,7 @@ Ce dossier regroupe mes exercices pratiques et cas d'étude réalisés dans le c
 * **Concept :** Identifier un écart entre le résultat attendu et le résultat obtenu, puis documenter l'anomalie de façon claire pour l'équipe de développement.
 * **Exercices correspondants :**
   * [`/anomalies/test logiciel -Exécution des tests.pdf`](https://github.com/loubna-eng/-portfolio-technique/blob/master/testing/anomalies/test%2Blogiciel%2B-Cr%C3%A9ationn%2Bd'une%2Banomalie.pdf) [cite: 33, 34].
-  * [`/anomalies/test logiciel -Créationn d'une anomalie.pdf`](./anomalies/test%20logiciel%20-Cr%C3%A9ationn%20d'une%20anomalie.pdf) (Fiche de bug détaillée pour impossibilité de paiement CB)[cite: 35].
+  * [`/anomalies/test logiciel -Créationn d'une anomalie.pdf`](https://github.com/loubna-eng/-portfolio-technique/blob/master/testing/anomalies/test%2Blogiciel%2B-Ex%C3%A9cution%2Bdes%2Btests.pdf) (Fiche de bug détaillée pour impossibilité de paiement CB)[cite: 35].
 
 ---
 
