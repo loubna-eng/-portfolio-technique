@@ -37,7 +37,7 @@ Ce dossier regroupe mes exercices pratiques et cas d'étude réalisés dans le c
 * **Concept :** Valider les endpoints d'une API web (méthodes HTTP, paramètres de requête, corps JSON et codes de statut HTTP).
 * **Exercices correspondants :**
   * [`/api-testing/EXERCICE api.pdf`](./api-testing/EXERCICE%20api.pdf) (Matrice des routes API des employés : GET, POST, PUT, DELETE)[cite: 5].
-  * [`/api-testing/EXERCICE api - analyser.pdf`](./api-testing/EXERCICE%20api%20-%20analyser%20.pdf) (Analyse de requêtes et réponses JSON sous Postman)[cite: 6, 7].
+  * [`/api-testing/EXERCICE api - analyser.pdf`](https://github.com/loubna-eng/-portfolio-technique/blob/master/testing/api-testing/Correction%2BEXERCICE%2Bapi%2B-%2B.pdf)[cite: 6, 7].
 
 ---
 
