@@ -1,5 +1,6 @@
 
 🎨 Styles CSS (Mise en forme & Structure)
+
 📌 Ce que j'ai appris :
 
 Séparation des responsabilités : Utiliser un fichier CSS externe permet de styliser proprement les éléments HTML (header, main, footer, body) sans alourdir le code des pages et en évitant la répétition des styles.
