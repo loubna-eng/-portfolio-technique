@@ -33,4 +33,9 @@ nano fichier.php
 <?php
 phpinfo() ;
 ?>
-#http://192.168.88.174/fichier.php :on peut voir des informations sur la version php, les fichiers de configuration, les modules chargés, etc.
+#http://192.168.88.174/fichier.php :on peut voir des informations sur la version php, les fichiers de configuration, 
+les modules chargés, etc.
+#pour résoudre le problème lié à l'execution du fichier.php par apache: 
+sudo rm /var/www/html/index.html
+#redemarrage du service apache
+systemctl restart apache2
