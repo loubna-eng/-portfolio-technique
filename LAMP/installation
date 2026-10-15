@@ -1,1 +1,36 @@
 
+
+##  1. Étapes d'installation
+
+Voici l'ensemble des commandes nécessaires pour installer et configurer le serveur web et l'interpréteur PHP :
+
+```bash
+# Mettre à jour les paquets du système
+sudo apt update && sudo apt upgrade -y
+
+# Installer Apache, PHP et le module de liaison Apache-PHP
+sudo apt install apache2 -y
+#verifier l'etat du service : systemctl status apache2 + http://192.168.88.174 dans le naviguateur
+
+#Installer Apache, PHP et le module de liaison Apache-PHP Libapache2-mod-php
+sudo apt-ger install php curl -y
+
+# Installation du système de gestion de base de données mariaDB
+sudo apt-get install mariadb-server
+#sécurisez l'installation
+mysql_secure_installation
+# configurer mariaDB
+ mysql -u root -p
+# Module PHP et vérification de versions
+# pour cela nous allons créer un fichier php qui fera appel à la fonction fichier.php
+#Nous allons alors nous déplacer vers le répertoire /var/www/html et donc la commande sera :
+cd /var/www/html
+#creation du fichier.php
+touch fichier.php
+#L'éditeur de texte nano est simple à utiliser,  La commande sera alors
+nano fichier.php
+#code minimal pour appeler la fonction
+<?php
+phpinfo() ;
+?>
+#http://192.168.88.174/fichier.php :on peut voir des informations sur la version php, les fichiers de configuration, les modules chargés, etc.
