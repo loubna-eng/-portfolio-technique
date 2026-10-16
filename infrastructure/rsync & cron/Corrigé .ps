@@ -1,1 +1,15 @@
-
+#partie infra: deux machine Debian 12 avec une carte reseau NAT: 
+#le SerV1: IP: 192.168.88.174
+#le serV2: IP: 192.168.88.176
+#Remarque: contriarement à Virtual box, sur VMware : deux Vm en NAT peuvenet communiquer ensemble sans rajouter
+#une deuxieme carte en reseau privé ou passer en bridge 
+1stap: cration des fichiers: 
+SerV1: 
+mkdir -p /var/projects
+chown -R root:root /var/projects
+serV2: 
+mkidr -p /backups/projects
+chown -R utilisateur:utilisateur /var/projects
+rsync -avz -e "ssh" /var/projects/ utilisateur@192.168.88.176:/backups/
+#pour verifier si la sauvegarde a été réalisé avec succés:
+ls -l /backups/projects/
