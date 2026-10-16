@@ -10,6 +10,6 @@ chown -R root:root /var/projects
 serV2: 
 mkidr -p /backups/projects
 chown -R utilisateur:utilisateur /var/projects
-rsync -avz -e "ssh" /var/projects/ utilisateur@192.168.88.176:/backups/
+rsync -avz -e "ssh" /var/projects/ utilisateur@192.168.88.176:/backups/projects/
 #pour verifier si la sauvegarde a été réalisé avec succés:
 ls -l /backups/projects/
