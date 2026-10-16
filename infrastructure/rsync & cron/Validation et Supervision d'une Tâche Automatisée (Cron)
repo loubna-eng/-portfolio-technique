@@ -1,1 +1,24 @@
 
+"la mise en place d'une automatisation (cron + rsync) doit impérativement s'accompagner d'une phase de vérification et de traçabilité pour s'assurer de sa fiabilité en production.
+
+#1. Vérification de l'état du service
+Avant toute chose, il faut s'assurer que le planificateur de tâches du système d'exploitation est opérationnel :
+
+sudo systemctl status cron
+
+#2. Analyse et lecture des journaux système (logs)
+
+sudo journalctl -u cron -f : Intérêt : Permet de suivre l'activité du service en temps réel (mode "live") pour valider l'exécution instantanée d'une tâche.
+
+Repères d'analyse (Quoi chercher ?) :
+
+#La session ouverte : session opened for user root (indique que le système a autorisé le lancement).
+#La commande cible (CMD) : (root) CMD (rsync ...) (la preuve formelle que la commande de sauvegarde a bien été déclenchée à l'heure prévue).
+#La session fermée : session closed for user root (confirme la fin propre du traitement).
+
+Double contrôle métier (La preuve par le résultat)
+On ne se fie pas uniquement aux logs du planificateur : On valide également le résultat final sur la machine cible (SerV2) :
+
+Commande : ls -l /backups/projets/
+
+Objectif : Vérifier l'horodatage et la présence effective des fichiers synchronisés pour valider la chaîne complète de bout en bout.
