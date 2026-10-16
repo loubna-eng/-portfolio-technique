@@ -3,8 +3,8 @@
 #le serV2: IP: 192.168.88.176
 #Remarque: contriarement à Virtual box, sur VMware : deux Vm en NAT peuvenet communiquer ensemble sans rajouter
 #une deuxieme carte en reseau privé ou passer en bridge 
-1stap: cration des fichiers: 
-SerV1: 
+#1stap: cration des fichiers: 
+#SerV1: 
 mkdir -p /var/projects
 chown -R root:root /var/projects
 serV2: 
@@ -13,3 +13,22 @@ chown -R utilisateur:utilisateur /var/projects
 rsync -avz -e "ssh" /var/projects/ utilisateur@192.168.88.176:/backups/projects/
 #pour verifier si la sauvegarde a été réalisé avec succés:
 ls -l /backups/projects/
+
+
+#partie2: Automatisation de sauvegarde via Cron
+
+#Via Crontab -e, on décommente la ligne de la sauvegarde,  et on éditant les  paramétres la ligne rsync pour 
+"fixer minutes/heure/jours/mois/année de l'execution
+0 * * * * rsync -avz -e ssh /var/projets/ utilisateur@192.168.88.176:/backups/projets/
+
+#Voici le détail précis de chaque élément de la ligne 0 * * * * :
+
+0 (1er chiffre) : La minute exacte. Ici, c'est 00. La tâche ne se lancera donc qu'au moment où l'horloge indique l'heure pile (pas à la minute 10 ou 30).
+
+* (2e étoile) : L'heure. L'étoile signifie "n'importe quelle heure" (toutes les heures de 0 à 23).
+
+* (3e étoile) : Le jour du mois. L'étoile signifie "tous les jours du mois" (du 1er au 31).
+
+* (4e étoile) : Le mois. L'étoile signifie "tous les mois de l'année" (de janvier à décembre).
+
+* (5e étoile) : Le jour de la semaine. L'étoile signifie "tous les jours de la semaine" (du lundi au dimanche).
