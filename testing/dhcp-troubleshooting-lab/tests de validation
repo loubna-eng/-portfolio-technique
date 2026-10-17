@@ -1,1 +1,58 @@
 
+1.3 Procédure de Test de Validation
+Commande : ip a
+
+Résultat attendu & obtenu :
+
+Adresse IP fixée sur 192.168.88.174/24.
+
+Disparition du flag dynamic (confirmation du passage en IP fixe permanente).
+
+🔍 Phase 2 : Dépannage du Service DHCP (isc-dhcp-server)
+Lors du déploiement du service DHCP, plusieurs dysfonctionnements ont été provoqués puis analysés à l'aide des outils de diagnostic système (systemctl, journalctl).
+
+❌ Incident 1 : Chîne de caractères non fermée sur l'interface
+Symptôme : Le service échoue au démarrage avec le code status=2.
+
+Analyse de logs (journalctl -u isc-dhcp-server) :
+
+Syntax error: Unterminated quoted string à la ligne 19 du fichier /etc/default/isc-dhcp-server.
+
+Cause : Guillemet manquant lors de la déclaration de la carte réseau d'écoute.
+
+Correction appliquée :
+
+Plaintext
+INTERFACESv4="ens33"
+INTERFACESv6=""
+❌ Incident 2 : Erreur de syntaxe de plage DHCP (dynamic-bootp)
+Symptôme : Échec du démarrage du démon dhcpd (code retour status=1/FAILURE).
+
+Analyse de logs (journalctl -u isc-dhcp-server) :
+
+Configuration file errors encountered -- exiting.
+
+Cause : Utilisation du mot-clé obsolète dynamic-bootp dans le fichier /etc/dhcp/dhcpd.conf.
+
+Correction appliquée : Remplacement par le mot-clé standard range.
+
+❌ Incident 3 : Bloc de configuration incomplet (unexpected end of file)
+Symptôme : Arrêt immédiat du service lors de l'initialisation.
+
+Analyse de logs (journalctl -u isc-dhcp-server) :
+
+/etc/dhcp/dhcpd.conf line 47: unexpected end of file.
+
+Cause : Oubli de l'accolade fermante } à la fin du bloc subnet.
+
+Correction appliquée : Ajout de l'accolade } de fermeture du sous-réseau.
+
+✅ Phase 3 : Configuration Finale Validée
+Fichier /etc/dhcp/dhcpd.conf
+Plaintext
+subnet 192.168.88.0 netmask 255.255.255.0 {
+    range 192.168.88.50 192.168.88.200;
+    option routers 192.168.88.2;
+    option broadcast-address 192.168.88.254;
+    option domain-name-servers 8.8.8.8;
+}
