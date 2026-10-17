@@ -56,3 +56,30 @@ subnet 192.168.88.0 netmask 255.255.255.0 {
     option broadcast-address 192.168.88.254;
     option domain-name-servers 8.8.8.8;
 }
+## 🧪 Phase 4 : Test, Validation & Analyse des Baux DHCP
+
+Une fois le service opérationnel sur le serveur (IP statique `192.168.88.174`), une machine cliente Debian distincte a été connectée au réseau du lab (`192.168.88.0/24`) afin de valider la distribution dynamique des adresses IP.
+
+### 4.1 Procédure de Test
+1. **Connexion du client :** Démarrage d'une machine virtuelle cliente configurée avec une interface réseau en mode DHCP automatique.
+2. **Vérification côté client :** Exécution de la commande `ip a` pour s'assurer que le client a bien récupéré une configuration IP valide de manière dynamique (`scope global dynamic`).
+3. **Vérification côté serveur :** Consultation du fichier de suivi des baux actifs du démon DHCP (`isc-dhcp-server`).
+
+Commande/Objectif / Utilité
+ip a:Vérification de l'attribution des adresses et des flags de cartes réseau
+systemctl status isc-dhcp-server:Contrôle de l'état d'exécution du service
+journalctl -u isc-dhcp-server -n 30 --no-pager:Inspection ciblée des 30 derniers logs d'erreur du démon DHCP
+systemctl restart networking:Application des modifications de la pile réseau
+
+### 4.2 Résultats & Validation
+* **Adresse attribuée au client :** `192.168.88.176`
+* **Analyse du fichier de baux (`cat /var/lib/dhcp/dhcpd.leases`) sur le serveur :**
+  ```text
+  lease 192.168.88.176 {
+      starts 6 2026/10/17 20:26:36;
+      ends 6 2026/10/17 20:36:36;
+      binding state active;
+      hardware ethernet 00:0c:29:86:3e:9b;
+      client-hostname "debian";
+  }
+
