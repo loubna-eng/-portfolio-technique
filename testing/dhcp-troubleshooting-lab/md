@@ -1,1 +1,30 @@
+# 🛠️ Rapport de Test & Résolution d'Incidents (Troubleshooting)
+**Environnement :** Debian 12 (VMware NAT `192.168.88.0/24`)  
+**Objectif :** Validation de l'adressage statique et déploiement du service `isc-dhcp-server`  
+---
 
+## 🎯 Objectifs de la séance de test
+1. Basculer l'interface serveur d'un adressage dynamique (DHCP) vers une IP fixe sécurisée (192.168.88.174).
+2. Déployer et configurer un service DHCP local (isc-dhcp-server).
+3. Identifier, analyser et corriger les erreurs de syntaxe et de configuration rencontrées lors de la mise en service.
+
+---
+
+## 🧪 Phase 1 : Configuration & Validation du Réseau Statique
+
+### 1.1 Incidents rencontrés & Analyse
+* **Erreur constatée :** Message d'erreur `misplaced option` lors du redémarrage du service réseau `networking`.
+* **Diagnostic :** Présence de lignes parasites du bloc `lo` collées en tout début de fichier `/etc/network/interfaces` en dehors des zones de commentaires.
+
+### 1.2 Configuration finale validée (`/etc/network/interfaces`)
+```text
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# Configuration de la carte réseau en IP statique
+auto ens33
+iface ens33 inet static
+    address 192.168.88.174
+    netmask 255.255.255.0
+    gateway 192.168.88.2
