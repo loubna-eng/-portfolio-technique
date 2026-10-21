@@ -1,6 +1,6 @@
 # Portfolio Technique : Assurance Qualité (QA) & Infrastructure IT
 
-Bienvenue sur la documentation de mes projets réalisés dans le cadre de ma reconversion professionnelle vers le Testing Logiciel** et l'**Automatisation**.
+Portfolio regroupant des projets en qualité logicielle, systèmes d'information, administration système et automatisation.
 
 Tout au long de mon parcours d'apprentissage, j'ai combiné théorie et pratique afin de développer des compétences solides, d'assimiler les notions fondamentales et d'être opérationnelle rapidement une fois en poste.
 
