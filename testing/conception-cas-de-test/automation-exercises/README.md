@@ -7,11 +7,11 @@ Après avoir étudié les principes de conception des cas de test dans le cadre 
 ✅ Cas de test exécutés
 
                                 
-
 TC-001	= Connexion avec identifiants valides	 =    Vérifier qu'un utilisateur enregistré peut se connecter	       =       ✅ PASS	
 
+<img width="946" height="532" alt="Capture d’écran 2026-10-27 164333" src="https://github.com/user-attachments/assets/e5607844-fa9c-4781-afa2-81da6688311f" />
 
-<img width="855" height="528" alt="Capture d’écran 2026-10-27 164048" src="https://github.com/user-attachments/assets/61fa2320-d6b7-468d-b131-d735f918cfde" />
+<img width="940" height="527" alt="Capture d’écran 2026-10-27 164439" src="https://github.com/user-attachments/assets/1f05c319-3508-4dd7-acc8-948e6bd3ce6a" />
 
 TC-002 =	Connexion avec mot de passe invalide	=   Vérifier l'affichage du message d'erreur	                     =       ✅ PASS	
 
