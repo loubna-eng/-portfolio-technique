@@ -1,0 +1,115 @@
+# 🛠️ Rapport de Test & Résolution d'Incidents (Troubleshooting)
+**Environnement :** Debian 12 (VMware NAT `192.168.88.0/24`)  
+**Objectif :** Validation de l'adressage statique et déploiement du service `isc-dhcp-server`  
+---
+
+## 🎯 Objectifs de la séance de test
+1. Basculer l'interface serveur d'un adressage dynamique (DHCP) vers une IP fixe sécurisée (192.168.88.174).
+2. Déployer et configurer un service DHCP local (isc-dhcp-server).
+3. Identifier, analyser et corriger les erreurs de syntaxe et de configuration rencontrées lors de la mise en service.
+
+---
+
+## 🧪 Phase 1 : Configuration & Validation du Réseau Statique
+
+### 1.1 Incidents rencontrés & Analyse
+* **Erreur constatée :** Message d'erreur `misplaced option` lors du redémarrage du service réseau `networking`.
+* **Diagnostic :** Présence de lignes parasites du bloc `lo` collées en tout début de fichier `/etc/network/interfaces` en dehors des zones de commentaires.
+
+### 1.2 Configuration finale validée (`/etc/network/interfaces`)
+```text
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# Configuration de la carte réseau en IP statique
+auto ens33
+iface ens33 inet static
+    address 192.168.88.174
+    netmask 255.255.255.0
+    gateway 192.168.88.2
+
+
+1.3 Procédure de Test de Validation
+Commande : ip a
+
+Résultat attendu & obtenu :
+
+Adresse IP fixée sur 192.168.88.174/24.
+
+Disparition du flag dynamic (confirmation du passage en IP fixe permanente).
+
+🔍 Phase 2 : Dépannage du Service DHCP (isc-dhcp-server)
+Lors du déploiement du service DHCP, plusieurs dysfonctionnements ont été provoqués puis analysés à l'aide des outils de diagnostic système (systemctl, journalctl).
+
+❌ Incident 1 : Chîne de caractères non fermée sur l'interface
+Symptôme : Le service échoue au démarrage avec le code status=2.
+
+Analyse de logs (journalctl -u isc-dhcp-server) :
+
+Syntax error: Unterminated quoted string à la ligne 19 du fichier /etc/default/isc-dhcp-server.
+
+Cause : Guillemet manquant lors de la déclaration de la carte réseau d'écoute.
+
+Correction appliquée :
+
+Plaintext
+INTERFACESv4="ens33"
+INTERFACESv6=""
+❌ Incident 2 : Erreur de syntaxe de plage DHCP (dynamic-bootp)
+Symptôme : Échec du démarrage du démon dhcpd (code retour status=1/FAILURE).
+
+Analyse de logs (journalctl -u isc-dhcp-server) :
+
+Configuration file errors encountered -- exiting.
+
+Cause : Utilisation du mot-clé obsolète dynamic-bootp dans le fichier /etc/dhcp/dhcpd.conf.
+
+Correction appliquée : Remplacement par le mot-clé standard range.
+
+❌ Incident 3 : Bloc de configuration incomplet (unexpected end of file)
+Symptôme : Arrêt immédiat du service lors de l'initialisation.
+
+Analyse de logs (journalctl -u isc-dhcp-server) :
+
+/etc/dhcp/dhcpd.conf line 47: unexpected end of file.
+
+Cause : Oubli de l'accolade fermante } à la fin du bloc subnet.
+
+Correction appliquée : Ajout de l'accolade } de fermeture du sous-réseau.
+
+✅ Phase 3 : Configuration Finale Validée
+Fichier /etc/dhcp/dhcpd.conf
+Plaintext
+subnet 192.168.88.0 netmask 255.255.255.0 {
+    range 192.168.88.50 192.168.88.200;
+    option routers 192.168.88.2;
+    option broadcast-address 192.168.88.254;
+    option domain-name-servers 8.8.8.8;
+}
+## 🧪 Phase 4 : Test, Validation & Analyse des Baux DHCP
+
+Une fois le service opérationnel sur le serveur (IP statique `192.168.88.174`), une machine cliente Debian distincte a été connectée au réseau du lab (`192.168.88.0/24`) afin de valider la distribution dynamique des adresses IP.
+
+### 4.1 Procédure de Test
+1. **Connexion du client :** Démarrage d'une machine virtuelle cliente configurée avec une interface réseau en mode DHCP automatique.
+2. **Vérification côté client :** Exécution de la commande `ip a` pour s'assurer que le client a bien récupéré une configuration IP valide de manière dynamique (`scope global dynamic`).
+3. **Vérification côté serveur :** Consultation du fichier de suivi des baux actifs du démon DHCP (`isc-dhcp-server`).
+
+Commande/Objectif / Utilité
+ip a:Vérification de l'attribution des adresses et des flags de cartes réseau
+systemctl status isc-dhcp-server:Contrôle de l'état d'exécution du service
+journalctl -u isc-dhcp-server -n 30 --no-pager:Inspection ciblée des 30 derniers logs d'erreur du démon DHCP
+systemctl restart networking:Application des modifications de la pile réseau
+
+### 4.2 Résultats & Validation
+* **Adresse attribuée au client :** `192.168.88.176`
+* **Analyse du fichier de baux (`cat /var/lib/dhcp/dhcpd.leases`) sur le serveur :**
+  ```text
+  lease 192.168.88.176 {
+      starts 6 2026/10/17 20:26:36;
+      ends 6 2026/10/17 20:36:36;
+      binding state active;
+      hardware ethernet 00:0c:29:86:3e:9b;
+      client-hostname "debian";
+  }
