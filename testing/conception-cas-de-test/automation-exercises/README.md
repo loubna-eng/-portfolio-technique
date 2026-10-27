@@ -10,6 +10,9 @@ Après avoir étudié les principes de conception des cas de test dans le cadre 
 
 TC-001	= Connexion avec identifiants valides	 =    Vérifier qu'un utilisateur enregistré peut se connecter	       =       ✅ PASS	
 
+
+<img width="855" height="528" alt="Capture d’écran 2026-10-27 164048" src="https://github.com/user-attachments/assets/61fa2320-d6b7-468d-b131-d735f918cfde" />
+
 TC-002 =	Connexion avec mot de passe invalide	=   Vérifier l'affichage du message d'erreur	                     =       ✅ PASS	
 
 TC-003	Création d'un compte utilisateur	      =   Vérifier qu'un nouvel utilisateur peut créer un compte	       =       ✅ PASS
