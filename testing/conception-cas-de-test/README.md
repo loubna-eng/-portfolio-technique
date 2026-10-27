@@ -1,7 +1,6 @@
 
 📌 Context & Objectif de l'exercice
-Les exemples présentés dans cette section sont issus d'exercices réalisés dans le cadre d'une formation au test logiciel suivie sur Udemy.<img width="4032" height="254" alt="image" src="https://github.com/user-attachments/assets/d0315cfc-807d-4d2c-9fa3-ad95342ba195" />
-
+Les exemples présentés dans cette section sont issus d'exercices réalisés dans le cadre d'une formation au test logiciel suivie sur Udemy.https://copilot.cloud.microsoft/chat/conversation/testing/conception-cas-de-test/test+logiciel+-Conception+des+tests.pdf
 Ils m'ont permis d'acquérir les fondamentaux de la conception des cas de test, notamment l'identification des préconditions, la définition des étapes de test et la rédaction des résultats attendus.
 
 Afin de consolider ces acquis, j'ai ensuite mis ces notions en pratique sur le site Automation Exercise à travers la conception et l'exécution de tests fonctionnels. Les cas de test, captures d'écran et résultats obtenus sont présentés dans les sections dédiées de ce projet.
