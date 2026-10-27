@@ -3,10 +3,13 @@
 
 ## 📌 Contexte & Objectif de l'exercice
 L'exemple présenté ci-dessous est issu d'un exercice pratique réalisé dans le cadre d'une formation en test logiciel suivie sur Udemy.
+[Consulter le support complet d'exécution et d'anomalie (PDF)](.https://github.com/loubna-eng/-portfolio-technique/blob/master/testing/anomalies/test%2Blogiciel%2B-Ex%C3%A9cution%2Bdes%2Btests.pdf)
+
 Lors de l'exécution du cas de test CT-001 – Achat d'un article, une anomalie a été détectée dans le module « Vente Flash ».
 La quantité du produit ne pouvait pas être modifiée alors que ce comportement était attendu dans le scénario de test. 
 Cette anomalie a ensuite été documentée en détaillant les prérequis, les étapes de reproduction, le résultat attendu et le résultat obtenu afin de faciliter son analyse et sa correction.
 Cet exercice illustre la démarche de détection, de déclaration et de suivi d'une anomalie au cours d'une campagne de test.
+
 
 ## 🔑 Points essentiels abordés
 * **Cycle de vie du bug :* Détection ➔ Validation par le Test Lead ➔ Assignation au développeur ➔ Correction ➔ Retest par le tester ➔ Clôture.
