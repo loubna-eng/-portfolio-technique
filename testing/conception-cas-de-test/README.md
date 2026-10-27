@@ -33,7 +33,9 @@ Cette démarche m'a permis de passer d'une compréhension théorique des concept
 💡 Ce que j'ai appris
 *De l'exigence à la vérification
 Ce travail m'a permis de comprendre l'importance de la traçabilité entre les exigences métier et les cas de test afin de garantir une couverture fonctionnelle complète.
+
 *Développement d'une démarche qualité
+
 J'ai appris à structurer ma réflexion en identifiant les préconditions, les données nécessaires et les résultats attendus avant même l'exécution des tests.
 *Lien avec mon parcours scientifique
 Cette approche présente de nombreuses similitudes avec les méthodes utilisées en laboratoire. 
