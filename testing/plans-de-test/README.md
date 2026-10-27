@@ -17,6 +17,9 @@ Analyse et appropriation d'un plan de test réel (*Master Test Plan*) sur le mod
 * **Rigueur de cadrage :** Un test sans planification claire expose le projet à des oublis majeurs.
 * **Analogie avec la chimie :** Tout comme un protocole de laboratoire définit le matériel, les conditions opératoires et les critères de conformité avant l'essai, le plan de test définit l'environnement, les critères d'entrée/sortie et les responsabilités avant la recette.
 * L'étude de ce plan de test m'a permis de mieux comprendre le rôle du testeur dans le cycle de vie d'un logiciel.
+* 
 *J'ai notamment découvert que les activités de test ne se limitent pas à l'exécution de cas de test. Elles interviennent tout au long du projet afin de vérifier la qualité du produit, identifier les anomalies et accompagner leur correction jusqu'à leur résolution.
+
 *Ce projet m'a également permis de comprendre le cycle de vie d'une anomalie, depuis sa détection jusqu'à sa clôture après validation des corrections.
+
 *Enfin, j'ai découvert l'importance de la collaboration entre testeurs, développeurs et parties prenantes dans un contexte Agile, où les fonctionnalités sont développées et validées progressivement au fil des itérations.
