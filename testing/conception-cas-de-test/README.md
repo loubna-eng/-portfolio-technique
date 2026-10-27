@@ -1,7 +1,6 @@
 
 📌 Context & Objectif de l'exercice
 Les exemples présentés dans cette section sont issus d'exercices réalisés dans le cadre d'une formation au test logiciel suivie sur Udemy.
-
 Ils m'ont permis d'acquérir les fondamentaux de la conception des cas de test, notamment l'identification des préconditions, la définition des étapes de test et la rédaction des résultats attendus.
 testing/conception-cas-de-test/test+logiciel+-Conception+des+tests.pdf
 
