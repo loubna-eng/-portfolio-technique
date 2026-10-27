@@ -15,6 +15,8 @@ TC-001	= Connexion avec identifiants valides	 =    Vérifier qu'un utilisateur e
 
 TC-002 =	Connexion avec mot de passe invalide	=   Vérifier l'affichage du message d'erreur	                     =       ✅ PASS	
 
+<img width="944" height="524" alt="Capture d’écran 2026-10-27 164546" src="https://github.com/user-attachments/assets/45471866-5e9c-482a-b088-6fbc80ed1101" />
+
 TC-003	Création d'un compte utilisateur	      =   Vérifier qu'un nouvel utilisateur peut créer un compte	       =       ✅ PASS
 
 TC-006	Ajout d'un produit au panier	          =     Vérifier l'ajout d'un article au panier	                     =      ✅ PASS	
