@@ -29,10 +29,12 @@ Cette démarche m'a permis de passer d'une compréhension théorique des concept
 -Description détaillée des étapes à exécuter 
 -Détermination du résultat attendu 
 -Comparaison entre le résultat attendu et le résultat obtenu
+
 💡 Ce que j'ai appris
 *De l'exigence à la vérification
 Ce travail m'a permis de comprendre l'importance de la traçabilité entre les exigences métier et les cas de test afin de garantir une couverture fonctionnelle complète.
 *Développement d'une démarche qualité
 J'ai appris à structurer ma réflexion en identifiant les préconditions, les données nécessaires et les résultats attendus avant même l'exécution des tests.
 *Lien avec mon parcours scientifique
-Cette approche présente de nombreuses similitudes avec les méthodes utilisées en laboratoire. Comme dans un protocole expérimental, il est nécessaire de définir un cadre précis, de documenter les conditions d'exécution et de comparer les résultats observés aux résultats attendus afin de garantir la fiabilité et la reproductibilité des contrôles réalisés.
+Cette approche présente de nombreuses similitudes avec les méthodes utilisées en laboratoire. 
+Comme dans un protocole expérimental, il est nécessaire de définir un cadre précis, de documenter les conditions d'exécution et de comparer les résultats observés aux résultats attendus afin de garantir la fiabilité et la reproductibilité des contrôles réalisés.
