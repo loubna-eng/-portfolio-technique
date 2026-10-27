@@ -1,17 +1,36 @@
 
 📌 Context & Objectif de l'exercice
+Les exemples présentés dans cette section sont issus d'exercices réalisés dans le cadre d'une formation au test logiciel suivie sur Udemy.
 
-Étude et mise en pratique de la phase de conception des tests (Test Design) au sein du cycle de vie global du test logiciel. L'objectif est de comprendre comment transformer des exigences fonctionnelles en cas de test structurés, traçables et exécutables.
+Ils m'ont permis d'acquérir les fondamentaux de la conception des cas de test, notamment l'identification des préconditions, la définition des étapes de test et la rédaction des résultats attendus.
 
-🔑 Points essentiels abordésLe cycle de vie du processus de test : 
-Décomposition des étapes clés allant de la planification jusqu'à la clôture des tests, en passant par l'analyse, la conception, l'implémentation et l'exécution.  
-Structure d'un cas de test rigoureux :Identification de l'exigence liée (ex: RF.001).
-Définition des préconditions et des jeux de données nécessaires avant l'exécution.  
-Rédaction détaillée des étapes pas à pas.  
-Distinction claire entre le résultat attendu/obtenu et le résultat souhaité.   
+Afin de consolider ces acquis, j'ai ensuite mis ces notions en pratique sur le site Automation Exercise à travers la conception et l'exécution de tests fonctionnels. Les cas de test, captures d'écran et résultats obtenus sont présentés dans les sections dédiées de ce projet.
 
-💡 Ce que j'ai appris & Liens avec mon parcours
+Cette démarche m'a permis de passer d'une compréhension théorique des concepts QA à leur application dans un environnement de test proche d'un contexte réel.
 
-**De l'exigence à la vérification : J'ai compris l'importance d'une traçabilité irréprochable pour s'assurer qu'aucune fonctionnalité (comme l'affichage de marketplaces spécifiques) n'est oubliée lors de la recette.  
+🔑 Points essentiels abordés
+***Le cycle de vie du processus de test
+*Découverte des différentes phases d'une campagne de test :
+-Planification des tests 
+-Analyse des exigences 
+-Conception des cas de test 
+-Implémentation 
+-Exécution 
+-Suivi des anomalies 
+-Clôture des tests
+-Conception des cas de test
 
-Analogie avec la rigueur scientifique : Tout comme une démarche expérimentale en laboratoire exige de consigner précisément le protocole, les conditions initiales et les observations attendues, la rédaction des cas de test garantit la répétabilité, la fiabilité et la traçabilité des contrôles qualité sur une application.
+***Apprentissage des éléments indispensables à la rédaction d'un cas de test :
+-Identification de l'exigence couverte 
+-Définition des préconditions
+-Préparation des données de test 
+-Description détaillée des étapes à exécuter 
+-Détermination du résultat attendu 
+-Comparaison entre le résultat attendu et le résultat obtenu
+💡 Ce que j'ai appris
+*De l'exigence à la vérification
+Ce travail m'a permis de comprendre l'importance de la traçabilité entre les exigences métier et les cas de test afin de garantir une couverture fonctionnelle complète.
+*Développement d'une démarche qualité
+J'ai appris à structurer ma réflexion en identifiant les préconditions, les données nécessaires et les résultats attendus avant même l'exécution des tests.
+*Lien avec mon parcours scientifique
+Cette approche présente de nombreuses similitudes avec les méthodes utilisées en laboratoire. Comme dans un protocole expérimental, il est nécessaire de définir un cadre précis, de documenter les conditions d'exécution et de comparer les résultats observés aux résultats attendus afin de garantir la fiabilité et la reproductibilité des contrôles réalisés.
