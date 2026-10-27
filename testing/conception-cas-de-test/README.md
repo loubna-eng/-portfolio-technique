@@ -17,24 +17,39 @@ Cette démarche m'a permis de passer d'une compréhension théorique des concept
 *Découverte des différentes phases d'une campagne de test :
 
 -Planification des tests 
+
 -Analyse des exigences 
+
 -Conception des cas de test 
+
 -Implémentation 
+
 -Exécution 
+
 -Suivi des anomalies 
+
 -Clôture des tests
+
 -Conception des cas de test
 
 ***Apprentissage des éléments indispensables à la rédaction d'un cas de test :
+
 -Identification de l'exigence couverte 
+
 -Définition des préconditions
+
 -Préparation des données de test 
+
 -Description détaillée des étapes à exécuter 
+
 -Détermination du résultat attendu 
+
 -Comparaison entre le résultat attendu et le résultat obtenu
 
 💡 Ce que j'ai appris
+
 *De l'exigence à la vérification
+
 Ce travail m'a permis de comprendre l'importance de la traçabilité entre les exigences métier et les cas de test afin de garantir une couverture fonctionnelle complète.
 
 *Développement d'une démarche qualité
