@@ -19,6 +19,13 @@ TC-002 =	Connexion avec mot de passe invalide	=   Vérifier l'affichage du messa
 
 TC-003	Création d'un compte utilisateur	      =   Vérifier qu'un nouvel utilisateur peut créer un compte	       =       ✅ PASS
 
+
+<img width="956" height="512" alt="Capture d’écran 2026-10-27 164759" src="https://github.com/user-attachments/assets/356bec5f-4d99-475d-8a5d-b85273640956" />
+
+<img width="959" height="521" alt="Capture d’écran 2026-10-27 164915" src="https://github.com/user-attachments/assets/9a965b2d-8b85-4d25-9e69-ecf1d8354381" />
+
+
+
 TC-006	Ajout d'un produit au panier	          =     Vérifier l'ajout d'un article au panier	                     =      ✅ PASS	
 
 TC-007	Suppression d'un produit du panier      = Vérifier la suppression d'un article du panier	                   =        ✅ PASS	
