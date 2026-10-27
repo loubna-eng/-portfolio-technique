@@ -8,6 +8,8 @@ Ils m'ont permis d'acquérir les fondamentaux de la conception des cas de test, 
 
 Afin de consolider ces acquis, j'ai ensuite mis ces notions en pratique sur le site Automation Exercise à travers la conception et l'exécution de tests fonctionnels. Les cas de test, captures d'écran et résultats obtenus sont présentés dans les sections dédiées de ce projet.
 
+https://github.com/loubna-eng/-portfolio-technique/edit/master/testing/conception-cas-de-test/Automation%20Exercises
+
 Cette démarche m'a permis de passer d'une compréhension théorique des concepts QA à leur application dans un environnement de test proche d'un contexte réel.
 
 🔑 Points essentiels abordés
