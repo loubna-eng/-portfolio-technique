@@ -1,1 +1,123 @@
+***Un plan de test doit répondre principalement aux questions suivantes:
+*Qu'est-ce qu'on va tester ?
+*Pourquoi le teste-t-on ?
+*Comment le teste-t-on ?
+*Quand le teste-t-on ?
+*Qui réalise les tests ?
+*Quels sont les critères de réussite ?
+-----------------------------------------
+📌1. Présentation du projet
 
+***OrangeHRM est un progiciel de gestion des ressources humaines (SIRH) permettant aux entreprises de gérer les informations 
+des employés, les congés, le recrutement, les temps de travail et d'autres processus RH.
+Le présent plan de test porte sur le module My Info, qui constitue l'un des modules clés de l'application.
+
+**Le module My Info permet aux employés d'accéder à leurs informations personnelles et de mettre à jour certaines 
+données directement depuis une interface web, sans intervention du service des ressources humaines. 
+Cette approche favorise l'autonomie des utilisateurs tout en facilitant la gestion et la mise à disposition des informations 
+au sein de l'entreprise.
+
+*Les données sont accessibles à tout moment, sous réserve des droits accordés à chaque utilisateur.
+Le système applique des règles de sécurité strictes afin que chaque employé ne puisse consulter et modifier que
+les informations pour lesquelles il dispose des autorisations nécessaires.
+Dans le cadre du module ESS (Employee Self Service), seules certaines données peuvent être modifiées par l'utilisateur, 
+garantissant ainsi la confidentialité, l'intégrité et la sécurité des informations des employés.
+
+🎯2. Objectifs des tests
+L'objectif de cette campagne de test est de vérifier que le module My Info d'OrangeHRM fonctionne conformément aux exigences
+fonctionnelles définies pour les utilisateurs.
+Le processus de test consiste à exécuter les cas de test, analyser les résultats obtenus et identifier les éventuelles anomalies 
+afin de garantir la fiabilité du module.
+
+Une attention particulière est portée aux défauts de gravité élevée et moyenne, qui doivent être corrigés puis validés à nouveau
+lors des phases de re-test. Les anomalies mineures sont documentées et priorisées pour un traitement ultérieur.
+
+À l'issue de cette campagne, les objectifs sont :
+-Valider le bon fonctionnement des fonctionnalités du module My Info 
+-Garantir la conformité du système aux besoins utilisateurs 
+-Identifier et suivre les anomalies jusqu'à leur résolution 
+-Produire un ensemble de cas de test réutilisables pour les futures campagnes de test fonctionnel et de validation utilisateur (UAT),
+Contribuer à la livraison d'une version stable et prête à être déployée.
+
+3. Périmètre des tests
+Cette campagne de test porte sur le module My Info d'OrangeHRM.
+**Fonctionnalités testées
+-Consultation des informations personnelles de l'employé
+-Modification des informations autorisées
+-Gestion des droits d'accès utilisateur
+-Affichage des données personnelles
+-Navigation au sein du module My Info
+-Hors périmètre
+*Les éléments suivants ne sont pas couverts par cette campagne :
+-Tests de performance
+-Tests de charge
+-Tests de sécurité avancés
+-Autres modules d'OrangeHRM
+Pourquoi ce périmètre ?
+Le plan de test se concentre uniquement sur le module My Info afin de vérifier que les employés peuvent consulter et mettre à jour 
+leurs informations personnelles conformément aux règles métier et aux restrictions d'accès définies par l'application.
+💡Pourquoi définir un périmètre ?
+-Le temps de test étant limité, il est important de savoir précisément ce qui sera couvert.
+-Cette section permet également d'éviter les malentendus entre les équipes de développement et de test
+4. Stratégie de test
+-Test exploratoire : identification des défauts majeurs.
+-Test fonctionnel : validation des fonctionnalités du module My Info.
+-Test UAT : validation des besoins utilisateurs.
+-Tests de Régression: Les tests de régression consistent à réexécuter des tests déjà validés après une correction ou une évolution.
+
+5. Critères d'entrée et de sortie
+📥Critères d'entrée
+Les tests peuvent commencer lorsque 
+-Les exigences fonctionnelles sont validées 
+-Les cas de test sont rédigés
+-Les développements sont terminés 
+-L'environnement de test est disponible
+Pourquoi ?
+Ces éléments garantissent que l'application est suffisamment prête pour être testée. 
+Tester une fonctionnalité incomplète ou sans exigences claires risque de produire des résultats peu fiables.
+📤Critères de sortie
+La campagne de test est considérée comme terminée lorsque :
+-Tous les cas de test ont été exécutés
+-Aucun défaut critique ou bloquant n'est encore ouvert 
+-Les corrections apportées ont été vérifiées
+-Les résultats des tests ont été documentés
+Pourquoi ?
+Ces critères permettent de s'assurer que le module a été entièrement vérifié et qu'il est suffisamment stable pour être livré.
+
+6. Gestion des anomalies
+Lorsqu'un défaut est détecté pendant les tests, il suit le cycle suivant :
+
+Identification de l'anomalie ;
+Création d'un ticket dans HP ALM ;
+Analyse et correction par l'équipe de développement ;
+Vérification de la correction (re-test) ;
+Clôture du ticket si le problème est résolu.
+Objectif :
+**Assurer le suivi de chaque anomalie jusqu'à sa résolution complète et éviter qu'un défaut ne soit oublié.
+
+7. Risques identifiés
+Les principaux risques pouvant impacter la campagne de test sont :
+-Retard dans la livraison des développements 
+-Indisponibilité de l'environnement de test 
+-Découverte tardive d'anomalies critiques
+-Modification des exigences en cours de projet 
+-Ressources insuffisantes pour réaliser tous les tests prévus
+
+Pourquoi les identifier ?
+**Anticiper ces risques permet d'adapter le planning et de réduire les impacts sur la qualité du projet.
+
+8. Environnement de test
+-Élément	Description
+-Application	OrangeHRM 3.0
+-Module testé	My Info
+-Outil de gestion des tests	HP ALM
+-Navigateurs	Internet Explorer, Firefox, Google Chrome
+
+Pourquoi documenter l'environnement ?
+Application	: OrangeHRM 3.0
+Module testé :	My Info
+Outil de gestion des tests :	HP ALM
+Navigateurs	Internet Explorer, Firefox, Google Chrome
+
+**Les résultats peuvent varier selon le navigateur ou la configuration utilisée. 
+Cette information permet de reproduire les tests dans les mêmes conditions.
