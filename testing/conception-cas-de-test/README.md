@@ -11,8 +11,11 @@ Afin de consolider ces acquis, j'ai ensuite mis ces notions en pratique sur le s
 Cette démarche m'a permis de passer d'une compréhension théorique des concepts QA à leur application dans un environnement de test proche d'un contexte réel.
 
 🔑 Points essentiels abordés
+
 ***Le cycle de vie du processus de test
+
 *Découverte des différentes phases d'une campagne de test :
+
 -Planification des tests 
 -Analyse des exigences 
 -Conception des cas de test 
