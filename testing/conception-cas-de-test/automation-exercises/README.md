@@ -25,7 +25,9 @@ TC-003	Création d'un compte utilisateur	      =   Vérifier qu'un nouvel utilis
 <img width="959" height="521" alt="Capture d’écran 2026-10-27 164915" src="https://github.com/user-attachments/assets/9a965b2d-8b85-4d25-9e69-ecf1d8354381" />
 
 
-
 TC-006	Ajout d'un produit au panier	          =     Vérifier l'ajout d'un article au panier	                     =      ✅ PASS	
+
+<img width="936" height="533" alt="Capture d’écran 2026-10-27 165059" src="https://github.com/user-attachments/assets/203b01f2-2dcb-421c-9211-b99a65fc2982" />
+
 
 TC-007	Suppression d'un produit du panier      = Vérifier la suppression d'un article du panier	                   =        ✅ PASS	
