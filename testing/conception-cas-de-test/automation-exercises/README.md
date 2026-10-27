@@ -6,7 +6,8 @@ Après avoir étudié les principes de conception des cas de test dans le cadre 
 
 ✅ Cas de test exécutés
 
-ID                Objectif	                                               Statut	
+ID           Cas de test                                       Objectif	                                                Status                                   
+
 TC-001	Connexion avec identifiants valides	     Vérifier qu'un utilisateur enregistré peut se connecter	             ✅ PASS	
 
 TC-002	Connexion avec mot de passe invalide	   Vérifier l'affichage du message d'erreur	                             ✅ PASS	
