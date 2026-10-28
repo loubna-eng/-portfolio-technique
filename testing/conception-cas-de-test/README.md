@@ -57,6 +57,8 @@ Ce travail m'a permis de comprendre l'importance de la traçabilité entre les e
 *Développement d'une démarche qualité
 
 J'ai appris à structurer ma réflexion en identifiant les préconditions, les données nécessaires et les résultats attendus avant même l'exécution des tests.
+
 *Lien avec mon parcours scientifique
+
 Cette approche présente de nombreuses similitudes avec les méthodes utilisées en laboratoire. 
 Comme dans un protocole expérimental, il est nécessaire de définir un cadre précis, de documenter les conditions d'exécution et de comparer les résultats observés aux résultats attendus afin de garantir la fiabilité et la reproductibilité des contrôles réalisés.
