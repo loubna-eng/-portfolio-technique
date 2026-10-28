@@ -15,7 +15,7 @@ Pour concrétiser ces notions, j'ai réalisé plusieurs cas pratiques documenté
 * Stratégie et élaboration de plans de test (*Test Plans*)
 * Conception et rédaction de cahiers de recette
 * Qualification et documentation d'anomalies (*Bug Reports*)
-* Tests et validation d'APIs REST (*Postman*)
+* Tests et validation d'APIs REST 
 
 ### 2. 🛠️ Fondamentaux Systèmes, Réseaux & Automatisation
 Afin de renforcer ma compréhension globale des architectures et portée par une vraie curiosité pour l'automatisation, j'ai investi dans une formation à distance en autonomie sur les fondamentaux IT. 
