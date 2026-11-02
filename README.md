@@ -26,7 +26,12 @@ Cette formation m'a permis d'acquérir des compétences pratiques en :
 * **Active Directory (AD DS) & Automatisation** (Scripting PowerShell)
 * **Administration Linux** (Déploiement de services type GLPI et Wiki.js)
 
-Cette expérience m'a également permis de développer mon **esprit critique** et mes capacités de **résolution de problèmes (troubleshooting)** : identifier l'origine des erreurs d'installation, analyser les logs, documenter les dysfonctionnements et les corriger. Une démarche d'investigation méthodique qui a confirmé ma passion pour le métier du test !
+Cette expérience m'a également permis de développer mon **esprit critique** et mes capacités de **résolution de problèmes (troubleshooting)** : 
+* **Identification des erreurs d'installation
+* **Analyse des logs
+* **Documentation des incidents
+* **Mise en œuvre des correctifs
+Cette démarche d'investigation méthodique renforce aujourd'hui mon intérêt pour l'Assurance Qualité ainsi que pour les environnements systèmes et réseaux.
 
 ---
 
