@@ -21,16 +21,16 @@ Pour concrétiser ces notions, j'ai réalisé plusieurs cas pratiques documenté
 Afin de renforcer ma compréhension globale des architectures et portée par une vraie curiosité pour l'automatisation, j'ai investi dans une formation à distance en autonomie sur les fondamentaux IT. 
 
 Cette formation m'a permis d'acquérir des compétences pratiques en :
-* **Virtualisation & Environnements de lab (VMware, VirtualBox)
+* Virtualisation & Environnements de lab (VMware, VirtualBox)
 * **Administration Réseau** (Services d'infrastructure, simulation Cisco)
 * **Active Directory (AD DS) & Automatisation** (Scripting PowerShell)
 * **Administration Linux** (Déploiement de services type GLPI et Wiki.js)
 
 Cette expérience m'a également permis de développer mon **esprit critique** et mes capacités de **résolution de problèmes (troubleshooting)** : 
-* **Identification des erreurs d'installation
-* **Analyse des logs
-* **Documentation des incidents
-* **Mise en œuvre des correctifs
+* Identification des erreurs d'installation
+* Analyse des logs
+* Documentation des incidents
+* Mise en œuvre des correctifs
 Cette démarche d'investigation méthodique renforce aujourd'hui mon intérêt pour l'Assurance Qualité ainsi que pour les environnements systèmes et réseaux.
 
 ---
